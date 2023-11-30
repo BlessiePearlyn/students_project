@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    {% for project in user_projects %}
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.description }}</p>
+    {% endfor %}
+</body>
+</html>
